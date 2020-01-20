@@ -4,6 +4,7 @@ import com.sun.org.apache.xpath.internal.operations.Or;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 
 import java.util.Arrays;
@@ -13,19 +14,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
+@ExtendWith(BeforeAfterExtension.class)
 public class OrderTest {
 
     private Order order;
 
     @BeforeEach
     void initializeOrder() {
-        System.out.println("Inside @BeforeEach Method");
         order = new Order();
     }
 
     @AfterEach
     void cleanUp() {
-        System.out.println("Inside @AfterEach Method");
         order.cancel();
     }
 

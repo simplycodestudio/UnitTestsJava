@@ -5,6 +5,15 @@ public class Account {
     private boolean active;
     private Address defaultDeliveryAdress;
 
+    public Account(Address defaultDeliveryAdress) {
+        this.defaultDeliveryAdress = defaultDeliveryAdress;
+        if (defaultDeliveryAdress != null) {
+            activate();
+        } else {
+            this.active = false;
+        }
+    }
+
     public void setActive(boolean active) {
         this.active = active;
     }
