@@ -141,7 +141,7 @@ class MealTest {
     }
 
     @Tag("fries")
-    @TestFactory
+    @TestFactory //testy dynamiczne
     Collection<DynamicTest> calculateMealPrices() {
 
         Order order = new Order();
