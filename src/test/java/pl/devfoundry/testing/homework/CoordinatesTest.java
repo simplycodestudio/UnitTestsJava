@@ -25,18 +25,18 @@ class CoordinatesTest {
     }
 
 
-    @Test
-    void copyShouldReturnNewObject() {
-        //given
-        Coordinates coordinates = new Coordinates(10,10);
-
-        //when
-        Coordinates copy = coordinates.copy(coordinates, 5,6);
-
-        //then
-        assertThat(copy, not(sameInstance(coordinates)));
-        assertThat(copy, equalTo(coordinates));
-    }
+//    @Test
+//    void copyShouldReturnNewObject() {
+//        //given
+//        Coordinates coordinates = new Coordinates(10,10);
+//
+//        //when
+//        Coordinates copy = coordinates.copy(coordinates, 5,6);
+//
+//        //then
+//        assertThat(copy, not(sameInstance(coordinates)));
+//        assertThat(copy, equalTo(coordinates));
+//    }
 
     @Test
     void copyShoulReturnAddedCords() {

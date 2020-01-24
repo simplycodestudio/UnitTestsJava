@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UnitTest {
 
-    @BeforeEach
-    Unit unit = new Unit()
+
 
 }

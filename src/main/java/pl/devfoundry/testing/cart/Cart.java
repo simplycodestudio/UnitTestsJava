@@ -1,4 +1,7 @@
-package pl.devfoundry.testing;
+package pl.devfoundry.testing.cart;
+
+import pl.devfoundry.testing.Meal;
+import pl.devfoundry.testing.order.Order;
 
 import java.util.ArrayList;
 import java.util.List;

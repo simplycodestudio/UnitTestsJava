@@ -1,4 +1,4 @@
-package pl.devfoundry.testing;
+package pl.devfoundry.testing.order;
 
 import java.io.*;
 
@@ -19,6 +19,10 @@ public class OrderBackup {
     }
 
     void backupOrder(Order order) throws IOException {
+
+        if (writer == null) {
+            throw new IOException("Backup File Not Created");
+        }
         writer.append(order.toString());
     }
 

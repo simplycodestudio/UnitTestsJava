@@ -1,6 +1,7 @@
-package pl.devfoundry.testing;
+package pl.devfoundry.testing.order;
 
 import org.junit.jupiter.api.*;
+import pl.devfoundry.testing.Meal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class OrderBackupTest {
     void backupOrderWithOneMeal() throws IOException {
         //given
         Meal meal = new Meal(7, "Fries");
-        Order order = new Order();
+        pl.devfoundry.testing.order.Order order = new Order();
         order.addMealToOrder(meal);
 
         //when
