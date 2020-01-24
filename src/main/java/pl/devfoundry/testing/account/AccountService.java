@@ -18,13 +18,5 @@ public class AccountService {
                 .collect(Collectors.toList());
     }
 
-    void costam() {
-
-        String string1 = "abc";
-
-        string1 = string1 + "xyz";
-
-        string1 = "abc" + "xyz";
-    }
 
  }
