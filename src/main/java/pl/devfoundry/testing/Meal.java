@@ -5,6 +5,9 @@ public class Meal {
     private int quantity;
     private String name;
 
+    public Meal() {
+    }
+
     public Meal(int price) {
         this.price = price;
     }
@@ -36,6 +39,7 @@ public class Meal {
 
         return this.price - discount;
     }
+
 
     @Override
     public boolean equals(Object o) {
